@@ -1,0 +1,17 @@
+.App {
+    text-align: center;
+    background-color: ivory;
+}
+
+.background {
+    background-image: url("hex.png");
+    background-blend-mode: multiply;
+    opacity: 40%;
+
+    position: absolute;
+    width: 1440px;
+    height: 800px;
+    left: 0;
+    top: 0;
+}
+
