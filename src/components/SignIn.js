@@ -1,14 +1,17 @@
 import {useFormik} from "formik";
-import {Checkbox, Link, TextField} from "@mui/material";
+import {Checkbox, Link, TextField, Button} from "@mui/material";
+import {useDispatch} from "react-redux";
 
-const Registration = (props) => {
+const SignIn = () => {
+    const dispatch = useDispatch();
+
     const formik = useFormik({
         initialValues: {
             email: '',
             password: '',
         },
         onSubmit: values => {
-            console.log(JSON.stringify(values, null));
+            dispatch({type: "login"});
         }
     });
     return (
@@ -18,25 +21,28 @@ const Registration = (props) => {
                 fullWidth
                 id="email"
                 name="email"
-                label="Email*"
+                label="Email"
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 className="email"
+                margin="normal"
+                required="true"
             />
             <TextField
                 fullWidth
                 id="password"
                 name="password"
-                label="Password*"
+                label="Password"
                 type="password"
                 value={formik.values.password}
                 onChange={formik.handleChange}
+                required="true"
             />
             <Link>Forgot password?</Link>
-            <button type="submit">Submit</button>
+            <Button variant="contained" type="submit">Sign In</Button>
             <Checkbox label="Remember password" defaultChecked />
         </form>
     );
 }
 
-export default Registration;
+export default SignIn;

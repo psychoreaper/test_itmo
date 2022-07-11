@@ -1,17 +1,17 @@
 .App {
-    text-align: center;
-    background-color: ivory;
+    /*text-align: center;*/
+
+    /*opacity: 40%;*/
 }
 
 .background {
-    background-image: url("hex.png");
-    background-blend-mode: multiply;
-    opacity: 40%;
 
-    position: absolute;
-    width: 1440px;
-    height: 800px;
-    left: 0;
-    top: 0;
 }
 
+html {
+    width: 100%;
+    height: 100%;
+    /*background-image: url("hex.png");*/
+    background-size: cover;
+    background-blend-mode: multiply;
+}

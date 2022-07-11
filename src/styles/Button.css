@@ -3,16 +3,17 @@
     width: 250px;
     height: 250px;
 
-    /*text-transform: uppercase;
-    font-weight: bold;
-    color: white;*/
     border-radius: 20px;
     transform: rotate(45deg);
     border: none;
 }
 
 .button:hover {
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.6);
+}
+
+.button:disabled {
+    opacity: 30%;
 }
 
 .button-market {
@@ -21,29 +22,16 @@
     left: 515.98px;
 }
 
-.button-market:disabled {
-    /*background: #CFDEAE;*/
-    opacity: 30%;
-}
-
 .button-projects {
     background: #414549;
     top: 191px;
     left: 256.78px;
 }
 
-.button-projects:disabled {
-    background: #B9B9B7;
-}
-
 .button-user {
     background: #0298A9;
     top: 383px;
     left: 450.78px;
-}
-
-.button-user:disabled {
-    background: #A8D3D6;
 }
 
 .button-inner {
@@ -61,4 +49,8 @@
     text-transform: uppercase;
     transform: rotate(-45deg);
     color: #ffffff;
+}
+
+.button:disabled:hover {
+    box-shadow: none;
 }

@@ -1,18 +1,19 @@
 import './App.css';
-import Button from "./UI/Button";
 import {Grid} from "@mui/material";
 import RightPanel from "./components/RightPanel";
+import {useSelector} from "react-redux";
+import LeftPanel from "./components/LeftPanel";
 
 function App() {
-    const buttons = ["market", "projects", "user"];
+    const isAuth = useSelector(state => state.isAuth);
+
+    console.log(isAuth);
 
     return (
         <div className="App">
-            <div className="background"/>
-            {/*<img src="../public/hex.png" alt="bg" className="background"/>*/}
             <Grid container spacing={2}>
                 <Grid item xs={6}>
-                    {/*{buttons.map(i => <Button buttonText={i}/>)}*/}
+                    <LeftPanel />
                 </Grid>
                 <Grid item xs={3}>
                     <RightPanel />
