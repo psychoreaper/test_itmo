@@ -1,0 +1,11 @@
+.signin_button {
+    background-color: #0298A9;
+    color: #ffffff;
+    width: 160px;
+    height: 48px;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}

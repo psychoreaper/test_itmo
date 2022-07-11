@@ -5,25 +5,13 @@
     border-radius: 10px;
 }
 
-.user-avatar_bottom {
-    position: relative;
-    top: 35px;
-    height: 15px;
-}
-
-.user-text {
-    display: flex;
-    align-items: flex-start;
-    color: #0298A9;
-}
-
-.user-text_name {
+.user-name {
     color: #0298A9;
     font-size: 25px;
     font-weight: bold;
 }
 
-.user-text_logout {
+.user-logout {
     font-size: 20px;
     color: #0298A9;
     cursor: pointer;

@@ -1,5 +1,6 @@
+
 .button {
-    position: absolute;
+    position: relative;
     width: 250px;
     height: 250px;
 
@@ -18,20 +19,20 @@
 
 .button-market {
     background: #86BD24;
-    top: 64px;
-    left: 515.98px;
+    top: 188px;
+    left: 507px;
 }
 
 .button-projects {
     background: #414549;
-    top: 191px;
-    left: 256.78px;
+    top: 310px;
+    left: -32px;
 }
 
 .button-user {
     background: #0298A9;
-    top: 383px;
-    left: 450.78px;
+    top: 511px;
+    left: -82px;
 }
 
 .button-inner {

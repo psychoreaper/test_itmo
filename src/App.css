@@ -1,17 +1,23 @@
 .App {
-    /*text-align: center;*/
-
-    /*opacity: 40%;*/
-}
-
-.background {
-
+    font-family: Roboto, sans-serif;
 }
 
 html {
     width: 100%;
     height: 100%;
-    /*background-image: url("hex.png");*/
-    background-size: cover;
+    background-color: #fffce8;
     background-blend-mode: multiply;
+}
+
+html:after {
+    content: "";
+    background: url("hex.png");
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
 }

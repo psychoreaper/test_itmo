@@ -1,0 +1,15 @@
+.right-panel_child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.right-panel_parent {
+    height: 800px;
+}
+
+.right-panel_title {
+    font-size: 24px;
+    margin: 10px 0;
+}

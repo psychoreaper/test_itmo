@@ -1,6 +1,7 @@
 import {useFormik} from "formik";
-import {Checkbox, Link, TextField, Button} from "@mui/material";
+import {Checkbox, TextField, FormControlLabel} from "@mui/material";
 import {useDispatch} from "react-redux";
+import '../styles/SignIn.css';
 
 const SignIn = () => {
     const dispatch = useDispatch();
@@ -10,7 +11,7 @@ const SignIn = () => {
             email: '',
             password: '',
         },
-        onSubmit: values => {
+        onSubmit: () => {
             dispatch({type: "login"});
         }
     });
@@ -38,9 +39,15 @@ const SignIn = () => {
                 onChange={formik.handleChange}
                 required="true"
             />
-            <Link>Forgot password?</Link>
-            <Button variant="contained" type="submit">Sign In</Button>
-            <Checkbox label="Remember password" defaultChecked />
+            <p>Forgot password?</p>
+            <button className="signin_button" type="submit">Sign In</button>
+            <FormControlLabel control={
+                <Checkbox defaultChecked sx={{
+                    '&.Mui-checked': {
+                        color: "#0298A9",
+                    },
+                }}/>
+            } label="Remember password" size="small"/>
         </form>
     );
 }
